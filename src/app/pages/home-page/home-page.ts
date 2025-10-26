@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import {NavBar} from '../../components/nav-bar/nav-bar';
-import {Card} from 'primeng/card';
 
 @Component({
   selector: 'home-page',
   imports: [
-    NavBar,
-    Card
+    NavBar
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
