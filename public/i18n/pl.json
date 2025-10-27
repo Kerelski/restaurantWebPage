@@ -5,5 +5,13 @@
     "menu": "Menu",
     "gallery": "Galeria",
     "order_online": "Zamów online"
+  },
+  "home": {
+    "header": "Smak, który rozpala apetyt",
+    "subheader": "Pysznie i świeżo",
+    "local_suppliers": "Lokalni dostawcy",
+    "fresh_products": "Świeże produkty",
+    "experienced_chefs": "Doświadczeni pracownicy",
+    "rich_taste": "Bogaty smak"
   }
 }

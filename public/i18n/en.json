@@ -5,5 +5,13 @@
     "menu": "Menu",
     "gallery": "Gallery",
     "order_online": "Order online"
+  },
+  "home": {
+    "header": "A taste that whets the appetite",
+    "subheader": "Delicious and fresh",
+    "local_suppliers": "Local suppliers",
+    "fresh_products": "Fresh products",
+    "experienced_chefs": "Experienced chefs",
+    "rich_taste": "Rich taste"
   }
 }

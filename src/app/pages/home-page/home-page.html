@@ -1,3 +1,59 @@
-<div class="min-w-screen min-h-screen">
-  <nav-bar></nav-bar>
+<div class="w-screen min-h-screen flex flex-col">
+  <div class="relative w-full h-[500px] overflow-hidden">
+    <video
+      #myVideo
+      muted
+      autoplay
+      loop
+      playsinline
+      class="w-full h-full object-cover"
+    >
+      <source src="https://restaurant-web-page.s3.eu-north-1.amazonaws.com/fire_grill.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="relative w-full h-[200px]">
+    <div id="header" class="w-auto absolute top-0 right-0 md:text-8xl lg:text-9xl text-7xl text-right transform -translate-y-1/2 -translate-x-8">
+      {{'home.header' | translate}}
+    </div>
+  </div>
+  <div class="flex flex-col items-center gap-8">
+    <div class="text-4xl text-red-500 font-bold">{{ 'home.subheader' | translate }}</div>
+    <p-timeline [value]="events" align="alternate">
+      <ng-template #marker let-event>
+        <span
+          class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-red-500"
+        >
+          <i [class]="event.icon"></i>
+        </span>
+      </ng-template>
+      <ng-template #content let-event >
+        <div pAnimateOnScroll leaveClass="animate-leave fade-out-0"
+          [enterClass]="event.index % 2 === 0
+          ? 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000'
+          : 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000'">
+          <div class="flex flex-col w-full">
+            <div class="w-full relative" [ngClass]="event.index === 1 ? 'h-[300px]' : 'h-[200px]'">
+              <div class=" w-1/2 xl:text-8xl lg:text-7xl md:text-6xl text-5xl font-bold mb-16 absolute bottom-0 left-0 z-10 text-left">
+                  {{'home.' + event.header | translate}}
+              </div>
+              <img
+                [ngSrc]="event.image"
+                [alt]="event.name"
+                width="400"
+                height="400"
+                class="object-cover absolute bottom-0 right-0"
+              />
+            </div>
+            <p-card>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+              </p>
+            </p-card>
+          </div>
+        </div>
+      </ng-template>
+
+    </p-timeline>
+    <p-button label="Sprawdź nasze menu" icon="pi pi-arrow-right" iconPos="right" variant="outlined" />
+  </div>
 </div>

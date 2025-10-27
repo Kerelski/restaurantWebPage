@@ -14,18 +14,19 @@ import { provideHttpClient} from '@angular/common/http';
 import {provideTranslateService} from '@ngx-translate/core';
 import {definePreset} from '@primeuix/themes';
 
+
 const MyPreset = definePreset(AuraDark, {
   semantic: {
     primary: {
-      50: '{red.50}',
-      100: '{red.100}',
-      200: '{red.200}',
-      300: '{red.300}',
-      400: '{red.400}',
-      500: '{red.500}',
-      600: '{red.600}',
-      700: '{red.700}',
-      800: '{red.800}',
+      50: '{red.100}',
+      100: '{red.200}',
+      200: '{red.400}',
+      300: '{red.400}',
+      400: '{red.500}',
+      500: '{red.600}',
+      600: '{red.700}',
+      700: '{red.800}',
+      800: '{red.900}',
       900: '{red.900}',
       950: '{red.950}'
     }
@@ -51,6 +52,6 @@ export const appConfig: ApplicationConfig = {
         prefix: '/i18n/',
         suffix: '.json'
       })
-    })
+    }),
   ]
 };
