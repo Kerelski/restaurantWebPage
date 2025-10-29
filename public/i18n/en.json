@@ -6,12 +6,22 @@
     "gallery": "Gallery",
     "order_online": "Order online"
   },
+  "footer": {
+    "social_media": "Social media",
+    "contact": "Contact",
+    "copyrights": "Copyright © 2025 Men's Cave Restaurant. All rights reserved."
+  },
   "home": {
     "header": "A taste that whets the appetite",
     "subheader": "Delicious and fresh",
     "local_suppliers": "Local suppliers",
     "fresh_products": "Fresh products",
     "experienced_chefs": "Experienced chefs",
-    "rich_taste": "Rich taste"
+    "rich_taste": "Rich taste",
+    "menu_button": "Check our menu",
+    "local_suppliers_description": "Our grilled dishes taste exceptional because we use the finest ingredients from local producers. We select only fresh, natural products—from beef from small farms to vegetables from regional crops. By supporting local suppliers, we create flavors that combine American fire with Polish quality.",
+    "fresh_products_description": "Freshness you can trust. Every product in our kitchen is carefully selected and meets the highest quality standards. This gives our dishes their unique flavor – natural, intense, and authentic.",
+    "experienced_chefs_description": "Our experienced chefs and well-coordinated staff know exactly how to bring out the best in the heat. Their passion, knowledge, and attention to detail give each dish a unique character. It's their dedication that makes our burgers, steaks, and grilled specialties captivate with their taste, aroma, and presentation.",
+    "rich_taste_description": "Every ingredient, every recipe, and every moment of our team's work combine to create something exceptional—a taste that lingers in your memory. From carefully selected, fresh produce and local suppliers, to the passion and experience of our chefs, to perfect grilling—every element contributes to the uniqueness of our dishes."
   }
 }

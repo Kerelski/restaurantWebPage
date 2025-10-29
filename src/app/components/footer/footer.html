@@ -1,1 +1,68 @@
-<p>footer works!</p>
+<div class="w-full bg-black p-8 flex flex-col gap-8">
+  <div class="lg:grid lg:grid-cols-[1fr_auto_1fr_auto_1fr] gap-8 flex flex-col">
+    <div class="flex flex-col h-full justify-center">
+      <div class="flex flex-row gap-2 items-center justify-center cursor-pointer" (click)="router.navigate(['/'])" >
+        <img ngSrc="https://restaurant-web-page.s3.eu-north-1.amazonaws.com/logo.svg" alt="Logo" height="75" width="75"/>
+        <div id="name" class="md:text-3xl text-2xl text-nowrap">
+          MEN'S CAVE
+        </div>
+      </div>
+    </div>
+    <p-divider layout="vertical" class="lg:!block !hidden"></p-divider>
+    <div class="flex flex-col gap-1">
+      <div class="text-xl font-semibold">{{'footer.social_media' | translate}}</div>
+      <p-button variant="text">
+        <a href="https://www.facebook.com/man's_cave">
+          <div class="flex flex-row gap-4 items-center">
+            <i class="pi pi-facebook" style="font-size: 2rem"></i>
+            <span class="text-lg text-white">facebook.com/man's_cave</span>
+          </div>
+        </a>
+      </p-button>
+      <p-button variant="text">
+        <a href="https://www.instagram.com/man's_cave/">
+          <div class="flex flex-row gap-4 items-center">
+            <i class="pi pi-instagram" style="font-size: 2rem"></i>
+            <span class="text-lg text-white">instagram.com/man's_cave</span>
+          </div>
+        </a>
+      </p-button>
+      <p-button variant="text">
+        <a href="https://www.youtube.com/@man's_cave_restaurant">
+          <div class="flex flex-row gap-4 items-center">
+            <i class="pi pi-youtube" style="font-size: 2rem"></i>
+            <span class="text-lg text-white">youtube.com/@man's_cave_restaurant</span>
+          </div>
+        </a>
+      </p-button>
+      <p-button variant="text">
+        <a href="https://www.linkedin.com/in/man's_cave_lodz/">
+          <div class="flex flex-row gap-4 items-center">
+            <i class="pi pi-linkedin" style="font-size: 2rem"></i>
+            <span class="text-lg text-white">linkedin.com/in/man's_cave_lodz</span>
+          </div>
+        </a>
+      </p-button>
+    </div>
+    <p-divider layout="vertical" class="lg:!block !hidden"></p-divider>
+    <div class="flex flex-col gap-1">
+      <div class="text-xl font-semibold">{{'footer.contact' | translate}}</div>
+      <div class="flex flex-row gap-4 items-center p-2">
+        <i class="pi pi-phone" [style]="{'font-size': '2rem', 'color': '#ef4444'}"></i>
+        <span class="text-lg">+48 111 222 333 </span>
+      </div>
+      <div class="flex flex-row gap-4 items-center p-2">
+        <i class="pi pi-envelope" [style]="{'font-size': '2rem', 'color': '#ef4444'}"></i>
+        <span class="text-lg">mans.cave.restaurant@gmail.com</span>
+      </div>
+      <div class="flex flex-row gap-4 items-center p-2">
+        <i class="pi pi-home" [style]="{'font-size': '2rem', 'color': '#ef4444'}"></i>
+        <span class="text-lg">Łódz, ul. Wólczańska 215 </span>
+      </div>
+    </div>
+  </div>
+  <div class="w-full text-base font-light text-center">
+      {{'footer.copyrights' | translate}}
+  </div>
+
+</div>
