@@ -1,5 +1,5 @@
-<div class="w-screen min-h-screen flex flex-col">
-  <div class="relative w-full h-[500px] overflow-hidden">
+<div class="w-full min-h-screen flex flex-col">
+  <div class="relative w-full md:h-[600px] h-[500px]  overflow-hidden">
     <video
       #myVideo
       muted
@@ -17,7 +17,8 @@
     </div>
   </div>
   <div class="flex flex-col items-center gap-8">
-    <div class="text-4xl text-red-500 font-bold">{{ 'home.subheader' | translate }}</div>
+    <div class="text-5xl text-red-500 font-bold" pAnimateOnScroll
+         enterClass="animate-enter fade-in-10 animate-duration-1000">{{ 'home.subheader' | translate }}</div>
     <p-timeline [value]="events" align="alternate" class="lg:!block !hidden">
       <ng-template #marker let-event>
         <span
@@ -89,7 +90,45 @@
         </div>
       }
     </div>
-    <p-button (click)="router.navigate(['/menu'])" label="{{'home.menu_button' | translate}}" icon="pi pi-arrow-right" iconPos="right" variant="outlined" />
+    <p-button pAnimateOnScroll
+              enterClass="animate-enter fade-in-10 animate-duration-1000" class="mt-2" (click)="router.navigate(['/menu'])" label="{{'home.menu_button' | translate}}" icon="pi pi-arrow-right" iconPos="right" variant="outlined" />
+    <div pAnimateOnScroll
+         enterClass="animate-enter fade-in-10 animate-duration-1000" class="text-4xl text-red-500 font-bold text-center">{{ 'home.gallery_subheader' | translate }}</div>
+    @if (images.length !== 0 ){
+      <div pAnimateOnScroll
+           enterClass="animate-enter fade-in-10 animate-duration-1000" class="w-full overflow-x-hidden">
+      <p-carousel [value]="images" [numVisible]="3"
+                  [numScroll]="1"
+                  [circular]="true"
+                  [autoplayInterval]="4000" class="px-8"
+                  [responsiveOptions]="responsiveOptions">
+        <ng-template pTemplate="item" let-img>
+          <div class="flex justify-center items-center p-4">
+            <img
+              [src]="img"
+              alt="gallery photo"
+              class="w-full h-auto rounded-2xl shadow-md object-cover"
+            />
+          </div>
+        </ng-template>
+      </p-carousel>
+      </div>
+    }
+    <p-button pAnimateOnScroll
+              enterClass="animate-enter fade-in-10 animate-duration-1000" (click)="router.navigate(['/gallery'])" label="{{'home.gallery_button' | translate}}" icon="pi pi-arrow-right" iconPos="right" variant="outlined" />
+    <div pAnimateOnScroll
+         enterClass="animate-enter fade-in-10 animate-duration-1000" class="text-4xl text-red-500 font-bold text-center">{{ 'home.about_us_subheader' | translate }}</div>
+    <iframe pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 animate-duration-1000"
+      class="w-full px-8"
+      height="400"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1100.3517726168393!2d19.4545837994915!3d51.747553988829594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34dc61aa6d8d%3A0x1ab821d799b508d1!2zRHppZWthbmF0IHd5ZHppYcWCdSBGVElNUywgV8OzbGN6YcWEc2thIDIxNSwgOTAtOTI0IMWBw7Nkxbo!5e0!3m2!1spl!2spl!4v1762335774768!5m2!1spl!2spl"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p-button pAnimateOnScroll
+              enterClass="animate-enter fade-in-10 animate-duration-1000" class="mb-8" (click)="router.navigate(['/about_us'])" label="{{'home.about_us_button' | translate}}" icon="pi pi-arrow-right" iconPos="right" variant="outlined" />
   </div>
   <app-footer></app-footer>
 </div>

@@ -1,4 +1,4 @@
-<div class="fixed top-0 left-0 w-full z-50 flex flex-row justify-between bg-black p-2 items-center shadow-xl shadow-gray-500/50">
+<div class="fixed top-0 left-0 w-screen overflow-x-hidden z-50 flex flex-row justify-between bg-black p-2 items-center shadow-xl shadow-gray-500/30">
   <div class="flex flex-row gap-2 items-center cursor-pointer" (click)="router.navigate(['/'])" >
     <img ngSrc="https://restaurant-web-page.s3.eu-north-1.amazonaws.com/logo.svg" alt="Logo" height="75" width="75"/>
     <div id="name" class="md:text-3xl text-2xl text-nowrap">
@@ -9,8 +9,7 @@
     <p-button label="{{'navigation.home'| translate}}" variant="text" (click)="router.navigate(['/'])"/>
     <p-button label="{{'navigation.menu'| translate}}" variant="text" (click)="router.navigate(['/menu'])" />
     <p-button label="{{'navigation.gallery'| translate}}" variant="text" (click)="router.navigate(['/gallery'])" />
-    <p-button label="{{'navigation.order_online'| translate}}" variant="text" (click)="router.navigate(['/order-online'])"/>
-    <p-button label="{{'navigation.contact'| translate}}" variant="text" (click)="router.navigate(['/contact'])"/>
+    <p-button label="{{'navigation.about_us'| translate}}" variant="text" (click)="router.navigate(['/about_us'])"/>
     <p-splitbutton [label]="currentLanguage" [model]="items" text [icon]="currentLanguage === 'Polski' ? 'fi fi-pl' : 'fi fi-us'" />
   </div>
   <p-button variant="text" class="lg:hidden inline-block" (click)="toggleDrawer()">
@@ -36,8 +35,7 @@
     <p-button label="{{'navigation.home'| translate}}" variant="text" fluid (click)="router.navigate(['/'])"/>
     <p-button label="{{'navigation.menu'| translate}}" variant="text" fluid (click)="router.navigate(['/menu'])"/>
     <p-button label="{{'navigation.gallery'| translate}}" variant="text" fluid (click)="router.navigate(['/gallery'])"/>
-    <p-button label="{{'navigation.order_online'| translate}}" variant="text" fluid (click)="router.navigate(['/order-online'])"/>
-    <p-button label="{{'navigation.contact'| translate}}" variant="text" fluid (click)="router.navigate(['/contact'])"/>
+    <p-button label="{{'navigation.about_us'| translate}}" variant="text" fluid (click)="router.navigate(['/about_us'])"/>
   </div>
   <ng-template #footer>
     <div class="flex flex-row justify-end">

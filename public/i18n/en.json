@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "contact": "Contact",
+    "about_us": "About us",
     "home": "Home",
     "menu": "Menu",
     "gallery": "Gallery",
@@ -9,7 +9,8 @@
   "footer": {
     "social_media": "Social media",
     "contact": "Contact",
-    "copyrights": "Copyright © 2025 Men's Cave Restaurant. All rights reserved."
+    "copyrights": "Copyright © 2025 Men's Cave Restaurant. All rights reserved.",
+    "fake_web_page": "The restaurant depicted does not exist in real life, and all names, addresses, contact numbers, and other information are purely coincidental or used fictitiously. Any resemblance to actual people, businesses, or locations is purely coincidental."
   },
   "home": {
     "header": "A taste that whets the appetite",
@@ -19,9 +20,35 @@
     "experienced_chefs": "Experienced chefs",
     "rich_taste": "Rich taste",
     "menu_button": "Check our menu",
+    "gallery_button": "Check more photos",
+    "about_us_button": "Find out more",
     "local_suppliers_description": "Our grilled dishes taste exceptional because we use the finest ingredients from local producers. We select only fresh, natural products—from beef from small farms to vegetables from regional crops. By supporting local suppliers, we create flavors that combine American fire with Polish quality.",
     "fresh_products_description": "Freshness you can trust. Every product in our kitchen is carefully selected and meets the highest quality standards. This gives our dishes their unique flavor – natural, intense, and authentic.",
     "experienced_chefs_description": "Our experienced chefs and well-coordinated staff know exactly how to bring out the best in the heat. Their passion, knowledge, and attention to detail give each dish a unique character. It's their dedication that makes our burgers, steaks, and grilled specialties captivate with their taste, aroma, and presentation.",
-    "rich_taste_description": "Every ingredient, every recipe, and every moment of our team's work combine to create something exceptional—a taste that lingers in your memory. From carefully selected, fresh produce and local suppliers, to the passion and experience of our chefs, to perfect grilling—every element contributes to the uniqueness of our dishes."
-  }
+    "rich_taste_description": "Every ingredient, every recipe, and every moment of our team's work combine to create something exceptional—a taste that lingers in your memory. From carefully selected, fresh produce and local suppliers, to the passion and experience of our chefs, to perfect grilling—every element contributes to the uniqueness of our dishes.",
+    "gallery_subheader": "Unique taste in unique company",
+    "about_us_subheader": "All roads lead to... US"
+  },
+  "gallery": {
+    "header": "Take a peek into our world of flavors."
+  },
+  "about_us": {
+    "header": "We cook from the heart, for people.",
+    "story": "Our story",
+    "story_description": "I've always loved cooking and experimenting with fire, smoke, and flavor. I learned to grill in the States, where I spent several years observing barbecue masters. After returning to Poland, I decided to create a place where you can experience the same atmosphere—the aroma of smoke, juicy meat, and the relaxed atmosphere of American cuisine. That's how our restaurant was born—from a passion for good food, shared moments, and the authentic flavor of grilled food.\n\nEvery dish we serve carries a piece of this history—patience, passion, and the smoke that flavors everything we make. We want everyone who visits us to feel like they're at a true American barbecue with friends.",
+    "opinions_subheader": "Check out what other customers have said about us",
+    "newsletter_subheader": "Sign up to stay up to date",
+    "map_subheader": "You can find us here",
+    "comment1": "The best ribs I’ve ever had! The meat falls right off the bone, and the BBQ sauce is pure perfection. I’ll definitely be back!",
+    "comment2": "Great atmosphere and excellent service. You can feel that the people here truly love what they do. World-class burgers!",
+    "comment3": "I’m not usually a big meat fan, but the pulled pork here completely won me over. Perfectly seasoned and so juicy!",
+    "comment4": "Generous portions, intense flavors, and that smoky aroma fills the whole place – exactly how it should be!",
+    "comment5": "I brought my friends here for dinner – everyone was impressed. Hands down, the best grill in town.",
+    "comment6": "You can tell the chef puts his heart into every dish. The medium-rare steak was perfect! We’ll definitely come back.",
+    "privacy":  "By subscribing to the newsletter, you consent to the processing of your personal data in accordance with ",
+    "privacy_policy": "Privacy policy",
+    "send": "Send",
+    "name": "Name",
+    "surname": "Surname"
+}
 }

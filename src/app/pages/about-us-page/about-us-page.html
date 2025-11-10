@@ -1,0 +1,149 @@
+<div class="w-screen min-h-screen flex flex-col">
+  <div class="relative w-full md:h-[600px] h-[500px]  overflow-hidden">
+    <img  class="w-full h-full object-cover" alt="steak"
+          src="https://restaurant-web-page.s3.eu-north-1.amazonaws.com/bar.jpg">
+  </div>
+  <div class="relative lg:w-4/5 w-full h-[125px] ml-auto">
+    <div id="header" class="w-auto absolute top-0 right-0 md:text-7xl lg:text-8xl text-5xl text-right transform -translate-y-1/2 -translate-x-8">
+      {{'about_us.header' | translate}}
+    </div>
+  </div>
+  <div class="w-full flex flex-col gap-8 px-8">
+    <div class="w-full flex md:flex-row flex-col gap-8 items-center">
+      <div class="w-1/2 object-cover" pAnimateOnScroll
+           enterClass="animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000">
+        <img src="https://restaurant-web-page.s3.eu-north-1.amazonaws.com/ceo.jpg" alt="ceo"/>
+      </div>
+      <div class="w-full h-full flex flex-col gap-4" pAnimateOnScroll
+           enterClass="animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000">
+        <div class="text-7xl font-bold md:block hidden">{{'about_us.story' | translate}}</div>
+        <p-card class="lg:text-2xl text-base">
+          <div class="block md:hidden text-3xl font-bold">
+            {{'about_us.story' | translate}}
+          </div>
+          <p>
+            {{'about_us.story_description' | translate}}
+          </p>
+        </p-card>
+      </div>
+    </div>
+    <div class="text-4xl text-red-500 font-bold text-center" pAnimateOnScroll
+         enterClass="animate-enter fade-in-10 animate-duration-1000">{{ 'about_us.opinions_subheader' | translate }}</div>
+    <p-carousel [value]="opinions" [numVisible]="2"
+                [numScroll]="1"
+                [circular]="true"
+                [autoplayInterval]="4000"
+                [responsiveOptions]="responsiveOptions"
+                pAnimateOnScroll
+                enterClass="animate-enter fade-in-10 animate-duration-1000">
+      <ng-template pTemplate="item" let-opinion>
+        <p-card class="md:mx-4 mx-0">
+          <div class="flex md:flex-row flex-col justify-between items-center">
+            <div class="flex flex-row gap-4 items-center">
+              <p-avatar [image]="opinion.avatar" size="xlarge" shape="circle">
+              </p-avatar>
+              <div class="md:text-3xl text-xl">{{opinion.name}}</div>
+            </div>
+            <p-rating [(ngModel)]="opinion.rating" readonly="true" />
+          </div>
+          <p class="md:text-lg text-base mt-4">{{'about_us.' + opinion.comment | translate}}</p>
+        </p-card>
+      </ng-template>
+    </p-carousel>
+    <div class="text-4xl text-red-500 font-bold text-center" pAnimateOnScroll
+         enterClass="animate-enter fade-in-10 animate-duration-1000">{{ 'about_us.map_subheader' | translate }}
+    </div>
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-8 w-full">
+      <div>
+        <iframe pAnimateOnScroll
+                enterClass="animate-enter fade-in-10 animate-duration-1000"
+                class="w-full px-8"
+                height="400"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1100.3517726168393!2d19.4545837994915!3d51.747553988829594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34dc61aa6d8d%3A0x1ab821d799b508d1!2zRHppZWthbmF0IHd5ZHppYcWCdSBGVElNUywgV8OzbGN6YcWEc2thIDIxNSwgOTAtOTI0IMWBw7Nkxbo!5e0!3m2!1spl!2spl!4v1762335774768!5m2!1spl!2spl"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="grid grid-cols-2 items-center" pAnimateOnScroll
+           enterClass="animate-enter fade-in-10 animate-duration-1000">
+        <p-button variant="text" class="text-center w-full" fluid>
+          <a href="https://www.facebook.com/man's_cave">
+            <i class="pi pi-facebook !text-6xl md:!text-7xl lg:!text-8xl"></i>
+          </a>
+        </p-button>
+        <p-button variant="text" class="text-center w-full" fluid>
+          <a href="https://www.instagram.com/man's_cave/">
+              <i class="pi pi-instagram !text-6xl md:!text-7xl lg:!text-8xl"></i>
+          </a>
+        </p-button>
+        <p-button variant="text" class="text-center w-full" fluid>
+          <a href="https://www.youtube.com/@man's_cave_restaurant">
+              <i class="pi pi-youtube !text-6xl md:!text-7xl lg:!text-8xl"></i>
+          </a>
+        </p-button>
+        <p-button variant="text" class="text-center w-full" fluid>
+          <a href="https://www.linkedin.com/in/man's_cave_lodz/">
+              <i class="pi pi-linkedin !text-6xl  md:!text-7xl lg:!text-8xl"></i>
+          </a>
+        </p-button>
+      </div>
+    </div>
+    <div class="text-4xl text-red-500 font-bold text-center" pAnimateOnScroll
+         enterClass="animate-enter fade-in-10 animate-duration-1000">{{ 'about_us.newsletter_subheader' | translate }}
+    </div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="w-full">
+      <div pAnimateOnScroll
+           enterClass="animate-enter fade-in-10 animate-duration-1000"
+           class="w-full flex md:flex-row flex-col gap-8 justify-between">
+
+        <div class="md:w-3/5 w-full flex flex-col gap-8">
+          <div class="flex flex-row gap-8">
+            <p-inputgroup class="w-1/2">
+              <p-inputgroup-addon>
+                <i class="pi pi-user"></i>
+              </p-inputgroup-addon>
+              <input pInputText placeholder="{{'about_us.name' | translate}}" formControlName="name" />
+            </p-inputgroup>
+
+            <p-inputgroup class="w-1/2">
+              <p-inputgroup-addon>
+                <i class="pi pi-user-edit"></i>
+              </p-inputgroup-addon>
+              <input pInputText placeholder="{{'about_us.surname' | translate}}" formControlName="surname" />
+            </p-inputgroup>
+          </div>
+
+          <p-inputgroup class="w-full">
+            <p-inputgroup-addon>
+              <i class="pi pi-envelope"></i>
+            </p-inputgroup-addon>
+            <input pInputText placeholder="E-mail" formControlName="email" />
+          </p-inputgroup>
+          <div class="flex flex-row gap-4 w-full items-center">
+            <p-checkbox inputId="privacy_policy" formControlName="privacy" binary="true"></p-checkbox>
+            <label for="privacy_policy" class="text-sm md:text-base">
+              {{'about_us.privacy' | translate}}
+              <a class="font-semibold underline" href="/privacy_policy">
+                {{'about_us.privacy_policy' | translate}}
+              </a>.
+            </label>
+          </div>
+        </div>
+
+        <div class="md:w-2/5 w-full flex flex-col items-center justify-between h-auto md:gap-1 gap-8">
+          <i class="pi pi-send text-red-500" style="font-size: 8rem"></i>
+          <p-button
+            type="submit"
+            severity="primary"
+            class="md:w-1/2 w-full"
+            [disabled]="form.invalid"
+            fluid>
+            {{'about_us.send' | translate}}
+          </p-button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <app-footer class="mt-8"></app-footer>
+</div>

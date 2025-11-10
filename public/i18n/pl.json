@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "contact": "Kontakt",
+    "about_us": "O nas",
     "home": "Strona główna",
     "menu": "Menu",
     "gallery": "Galeria",
@@ -9,8 +9,8 @@
   "footer": {
     "social_media": "Media społecznościowe",
     "contact": "Kontakt",
-    "copyrights": "Copyright © 2025 Men's Cave Restaurant. Wszelkie prawa zastrzeżone."
-
+    "copyrights": "Copyright © 2025 Men's Cave Restaurant. Wszelkie prawa zastrzeżone.",
+    "fake_web_page": "Przedstawiona restauracja nie istnieje w rzeczywistości, a wszelkie nazwy, adresy, numery kontaktowe oraz inne informacje są całkowicie przypadkowe lub zostały użyte w sposób fikcyjny. Jakiekolwiek podobieństwo do rzeczywistych osób, firm lub miejsc jest czysto przypadkowe."
   },
   "home": {
     "header": "Smak, który rozpala apetyt",
@@ -20,10 +20,35 @@
     "experienced_chefs": "Doświadczeni pracownicy",
     "rich_taste": "Bogaty smak",
     "menu_button": "Sprawdź nasze menu",
+    "gallery_button": "Sprawdź więcej zdjęć",
+    "about_us_button": "Dowiedz się więcej",
     "local_suppliers_description": "Nasze dania z grilla smakują wyjątkowo, bo korzystamy z najlepszych składników od lokalnych producentów. Wybieramy tylko świeże, naturalne produkty – od wołowiny z małych hodowli po warzywa z regionalnych upraw. Wspierając lokalnych dostawców, tworzymy smaki, które łączą amerykański ogień z polską jakością.",
     "fresh_products_description": "Świeżość, której możesz zaufać. Każdy produkt w naszej kuchni przechodzi staranną selekcję i spełnia najwyższe normy jakości. Dzięki temu nasze dania mają ten wyjątkowy smak – naturalny, intensywny i prawdziwy.",
     "experienced_chefs_description": "Doświadczeni szefowie kuchni i zgrany personel doskonale wiedzą, jak wydobyć z ognia to, co najlepsze. Dzięki ich pasji, wiedzy i dbałości o każdy detal, każde danie nabiera wyjątkowego charakteru. To właśnie ich zaangażowanie sprawia, że nasze burgery, steki i grillowane specjały zachwycają smakiem, aromatem i sposobem podania.",
-    "rich_taste_description": "Każdy składnik, każda receptura i każda chwila pracy naszego zespołu składają się na coś wyjątkowego – smak, który pozostaje w pamięci. Od starannie wyselekcjonowanych, świeżych produktów i lokalnych dostawców, przez pasję i doświadczenie naszych szefów kuchni, po perfekcyjne przygotowanie na grillu – każdy element wpływa na to, że nasze dania są niepowtarzalne."
-
+    "rich_taste_description": "Każdy składnik, każda receptura i każda chwila pracy naszego zespołu składają się na coś wyjątkowego – smak, który pozostaje w pamięci. Od starannie wyselekcjonowanych, świeżych produktów i lokalnych dostawców, przez pasję i doświadczenie naszych szefów kuchni, po perfekcyjne przygotowanie na grillu – każdy element wpływa na to, że nasze dania są niepowtarzalne.",
+    "gallery_subheader": "Wyjątkowy smak w wyjątkowym towarzystwie",
+    "about_us_subheader": "Wszystkie drogi prowadzą do... NAS"
+  },
+  "gallery": {
+    "header": "Zajrzyj do naszego świata smaków."
+  },
+  "about_us": {
+    "header": "Gotujemy z serca, dla ludzi.",
+    "story": "Nasza historia",
+    "story_description": "Od zawsze kochałem gotować i eksperymentować z ogniem, dymem i smakiem. Grilla nauczyłem się jeszcze w Stanach, gdzie spędziłem kilka lat, podpatrując mistrzów barbecue. Po powrocie do Polski postanowiłem stworzyć miejsce, w którym można poczuć ten sam klimat — zapach dymu, soczyste mięso i luz amerykańskiej kuchni. Tak powstała nasza restauracja — z pasji do dobrego jedzenia, wspólnych chwil i prawdziwego smaku z grilla.\nKażde danie, które podajemy, ma w sobie kawałek tej historii — cierpliwość, pasję i dym, który nadaje smaku wszystkiemu, co robimy. Chcemy, żeby każdy, kto do nas trafi, poczuł się jak na prawdziwym amerykańskim barbecue w gronie przyjaciół.",
+    "opinions_subheader": "Sprawdź co o nas mówili inni klienci",
+    "newsletter_subheader": "Zapisz się by być na bieżąco",
+    "map_subheader": "Znajdziesz nas tutaj",
+    "comment1": "Najlepsze żeberka, jakie jadłem w życiu! Mięso odchodzi od kości, a sos BBQ to po prostu poezja. Na pewno wrócę!",
+    "comment2": "Świetna atmosfera i obsługa. Czuć, że ludzie tu naprawdę kochają to, co robią. Burgery – klasa światowa!",
+    "comment3": "Nie jestem wielką fanką mięsa, ale pulled pork tutaj mnie totalnie przekonał. Idealnie przyprawione i soczyste!",
+    "comment4": "Porcje konkretne, smaki intensywne, a aromat dymu unosi się w całym lokalu – dokładnie tak, jak powinno być!",
+    "comment5": "Zabrałem tu znajomych na kolację – wszyscy byli zachwyceni. Najlepszy grill w mieście, bez dwóch zdań.",
+    "comment6": "Widać, że kucharz wkłada serce w to, co robi. Stek medium rare był idealny! Na pewno tu wrócimy",
+    "privacy": "Zapisując się do newslettera, wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z ",
+    "privacy_policy": "Polityką prywatności",
+    "send": "Wyślij",
+    "name": "Imię",
+    "surname": "Nazwisko",
   }
 }

@@ -3,7 +3,7 @@ import {
   provideBrowserGlobalErrorListeners,
   provideZoneChangeDetection
 } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {provideRouter, withInMemoryScrolling } from '@angular/router';
 import AuraDark from '@primeuix/themes/aura'
 
 import { routes } from './app.routes';
@@ -37,7 +37,10 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
+    provideRouter(routes, withInMemoryScrolling({
+        scrollPositionRestoration: 'top'
+      }
+    )),
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
